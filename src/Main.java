@@ -1,5 +1,6 @@
 import java.time.LocalDate;
 
+import br.com.dio.desafio.dominio.Conteudo;
 import br.com.dio.desafio.dominio.Curso;
 import br.com.dio.desafio.dominio.Mentoria;
 
@@ -20,8 +21,19 @@ public class Main {
         mentoria.setDescricao("Descrição da mentoria de Java");
         mentoria.setData(LocalDate.now());
 
+        Conteudo conteudo = new Mentoria();
+        conteudo.setTitulo("Mentoria de Python");
+        conteudo.setDescricao("Descrição da mentoria de Python");
+
+        Conteudo conteudo2 = new Curso();
+        conteudo2.setTitulo("Curso de Python");
+        conteudo2.setDescricao("Descrição do curso de Python");
+
         System.out.println(curso1);
         System.out.println(curso2);
         System.out.println(mentoria);
+        System.out.println(conteudo);
+        System.out.println(conteudo2);
+
     }
 }
